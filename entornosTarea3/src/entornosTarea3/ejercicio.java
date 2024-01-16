@@ -19,6 +19,13 @@ public class ejercicio {
 		System.out.println("el area de la circunferencia es: "+calaACirc(radio));
 		System.out.println("el perimetro de la circunferencia es : "+perimetroACirc(radio));
 		
+		//area cilindro
+		System.out.println("Introduce la altura para el cilindro: ");
+		int alturaCil = entrada.nextInt();
+		
+		System.out.println("Introduce la radio para el cilindro: ");
+		int radioCil = entrada.nextInt();
+		System.out.println("El área del cilindro es: " + areaCilindro(alturaCil, radioCil));
 	
 	}
 	//funcion de triangulo
@@ -33,6 +40,8 @@ public class ejercicio {
 		double perimetro=2*(3.14*radio);
 		return perimetro;
 		
+	}public static double areaCilindro(int alturaCil, int radioCil) {
+		return 2*3.14* alturaCil + 2*3.14* radioCil;
 	}
 
 }
