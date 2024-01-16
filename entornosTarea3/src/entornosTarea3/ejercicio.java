@@ -34,11 +34,17 @@ public class ejercicio {
 		int lado2rec=entrada.nextInt();
 		System.out.println("El área del rectángulo es: " + areaRectangulo(lado1rec, lado2rec));
 		
+
+		//volumen cubo
+		System.out.println("Introduce el lado del cubo: ");
+		int ladoCubo = entrada.nextInt();
+		System.out.println("el volumen del cubo es: "+volCubo(ladoCubo));
+
 		//área de un cubo
 		System.out.println("Introduce el lado de un cubo: ");
 		int ladoCubo = entrada.nextInt();
 		System.out.println("El área de un cubo es: " + areaCubo(ladoCubo));
-				
+
 	}
 	//funcion de triangulo
 	public static double calcularArea(int base, int altura) {
@@ -58,10 +64,13 @@ public class ejercicio {
 		
 	}public static double areaRectangulo(int lado1rec,int lado2rec) {
 		return ((lado1rec*2) + (lado2rec*2));
-		
-	//que pasa
+
+	}public static double volCubo(int ladoCubo) {
+		return ladoCubo^3;
+
 	}public static double areaCubo(int ladoCubo) {
 		return (ladoCubo*ladoCubo);
+
 	}
 
 }
