@@ -27,6 +27,12 @@ public class ejercicio {
 		int radioCil = entrada.nextInt();
 		System.out.println("El área del cilindro es: " + areaCilindro(alturaCil, radioCil));
 	
+		//área del rectángulo
+		System.out.println("introduce el lado 1 del rectangulo");
+		int lado1rec=entrada.nextInt();
+		System.out.println("introduce el lado 2 del rectangulo");
+		int lado2rec=entrada.nextInt();
+		System.out.println("El área del rectángulo es: " + areaRectangulo(lado1rec, lado2rec));
 	}
 	//funcion de triangulo
 	public static double calcularArea(int base, int altura) {
@@ -36,12 +42,16 @@ public class ejercicio {
     }public static double calaACirc(int radio) {
 		double area = 3.14*(radio^2);
 		return area;
+		
 	}public static double perimetroACirc(int radio) {
 		double perimetro=2*(3.14*radio);
 		return perimetro;
 		
 	}public static double areaCilindro(int alturaCil, int radioCil) {
 		return 2*3.14* alturaCil + 2*3.14* radioCil;
+		
+	}public static double areaRectangulo(int lado1rec,int lado2rec) {
+		return ((lado1rec*2) + (lado2rec*2));
 	}
 
 }
