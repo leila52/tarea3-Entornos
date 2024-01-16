@@ -57,6 +57,7 @@ public class ejercicio {
 		
 	}public static double areaRectangulo(int lado1rec,int lado2rec) {
 		return ((lado1rec*2) + (lado2rec*2));
+		//aaaaa
 	}public static double volCubo(int ladoCubo) {
 		return ladoCubo^3;
 	}
